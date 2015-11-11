@@ -1,10 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic,300,100italic,100);
 
+
 #page-wrapper {
     background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
     background-repeat: no-repeat;
-    background-position: 40% 30%;
+     background-position: 40% 30%;
+    
+   
+     
 }
+
+
+
+main {
+    margin: 0% 7% 0% 7%; 
+}
+
+
+/* header */
 
 
 header {
@@ -12,14 +25,14 @@ header {
     margin: 7% auto; 
 }
 
-main {
-    margin: 15% 7%; 
-}
-
 
 .benefix-logo {
     width: 100px; 
 }
+
+
+
+/* Font styling */
 
 h1, h2 {
     font-family: "lato";
@@ -29,7 +42,7 @@ h1, h2 {
 
 
 h1 {
-    font-size: 1.3em; 
+    font-size: 1.6em; 
 }
 
 h2 {
@@ -37,7 +50,12 @@ h2 {
 }
 
 
-nav {
+
+
+/* Second navigation */
+
+
+.second-nav {
     margin: 10% 0%; 
 }
 
@@ -63,3 +81,99 @@ li  {
     text-align: center; 
     margin-bottom: 5%; 
     }
+
+
+
+/* Footer */
+
+
+footer  {
+    text-align: center;
+    color: white; 
+    font-family: "lato"; 
+    font-size: 0.8em;
+
+    
+    
+    
+    }
+
+.social {
+    height: 25px; 
+    padding: 5px; 
+}
+
+
+
+/* Media queries tablet size */
+
+@media screen and (min-width: 768px)  {
+    
+    main {
+    margin: ; 
+}
+    
+    h1 {
+    font-size: 3.2em; 
+}
+
+    h2 {
+    font-size: 1.7em; 
+}
+    
+    
+    .benefix-logo {
+    width: 200px; 
+}
+    
+    
+    li  {
+    border: solid 6px #e8c52e; 
+    padding: 3%; 
+    text-align: center; 
+    margin-bottom: 9%; 
+    }
+    
+    
+    li a  { 
+   font-size: 1.7em;
+   
+        
+    }
+    
+    footer  {
+    text-align: center;
+    color: white; 
+    font-family: "lato"; 
+    font-size: 1.4em;
+    }
+
+
+    
+    
+
+    
+}
+
+
+/* Media queries desktop size */
+
+
+@media screen and (min-width: 1280px)  {
+    
+
+#page-wrapper {
+    background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
+    background-size: cover; 
+    background-position: 0% 0%;
+    
+
+
+
+
+
+
+
+
+
+
