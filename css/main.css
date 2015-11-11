@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic,300,100italic,100);
+
+#page-wrapper {
+    background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
+    background-repeat: no-repeat;
+    background-position: 40% 30%;
+}
+
+
+header {
+    width: 90%;
+    margin: 7% auto; 
+}
+
+main {
+    margin: 15% 7%; 
+}
+
+
+.benefix-logo {
+    width: 100px; 
+}
+
+h1, h2 {
+    font-family: "lato";
+    color: white;
+    text-align: center; 
+}
+
+
+h1 {
+    font-size: 1.3em; 
+}
+
+h2 {
+    font-size: 0.8em; 
+}
+
+
+nav {
+    margin: 10% 0%; 
+}
+
+
+ul {
+    margin: 0; 
+    padding: 0; 
+}
+
+li a {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "lato";
+    font-weight: 900; 
+    color: #e8c52e; 
+   }
+
+li  {
+    list-style-type: none;
+    border-color: #e8c52e;
+    border-style: solid; 
+    padding: 3%; 
+    text-align: center; 
+    margin-bottom: 5%; 
+    }
