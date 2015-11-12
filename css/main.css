@@ -5,15 +5,15 @@
     background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
     background-repeat: no-repeat;
      background-position: 40% 30%;
-    
-   
-     
+
+
+
 }
 
 
 
 main {
-    margin: 0% 7% 0% 7%; 
+    margin: 0% 7% 0% 7%;
 }
 
 
@@ -22,66 +22,104 @@ main {
 
 header {
     width: 90%;
-    margin: 7% auto; 
+    margin: 7% auto;
 }
 
 
 .benefix-logo {
-    width: 100px; 
+    width: 100px;
 }
 
 
 
 /* Font styling */
 
-h1, h2 {
+h1, h2, h3 {
     font-family: "lato";
     color: white;
-    text-align: center; 
+    text-align: center;
 }
 
 
 h1 {
-    font-size: 1.6em; 
+    font-size: 1.6em;
 }
 
 h2 {
-    font-size: 0.8em; 
+    font-size: 0.8em;
 }
 
-
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1em auto;
+}
 
 
 /* Second navigation */
 
 
 .second-nav {
-    margin: 10% 0%; 
+    margin: 10% 0%;
 }
 
 
 ul {
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
 }
 
 li a {
     text-decoration: none;
     list-style-type: none;
     font-family: "lato";
-    font-weight: 900; 
-    color: #e8c52e; 
+    font-weight: 900;
+    color: #e8c52e;
    }
 
 li  {
     list-style-type: none;
     border-color: #e8c52e;
-    border-style: solid; 
-    padding: 3%; 
-    text-align: center; 
-    margin-bottom: 5%; 
+    border-style: solid;
+    padding: 3%;
+    text-align: center;
+    margin-bottom: 5%;
     }
 
+
+/* About us */
+
+.about-us {
+  background-color: #fff;
+  margin: 0;
+  padding: 2em 5%;
+}
+
+.about-us h1,
+.about-us h2 {
+  color: #000;
+}
+
+.about-us h1 {
+  font-weight: lighter;
+}
+
+.about-us h2 {
+  color: #000;
+  margin-top: 2em;
+}
+
+.about-us li {
+  border: none;
+  padding: 3%;
+  text-align: center;
+  margin-bottom: 5%;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #e8c52e;
+  font-size: 1.5em;
+}
 
 
 /* Footer */
@@ -89,18 +127,18 @@ li  {
 
 footer  {
     text-align: center;
-    color: white; 
-    font-family: "lato"; 
+    color: white;
+    font-family: "lato";
     font-size: 0.8em;
 
-    
-    
-    
+
+
+
     }
 
 .social {
-    height: 25px; 
-    padding: 5px; 
+    height: 25px;
+    padding: 5px;
 }
 
 
@@ -108,51 +146,51 @@ footer  {
 /* Media queries tablet size */
 
 @media screen and (min-width: 768px)  {
-    
+
     main {
-    margin: ; 
+    margin: ;
 }
-    
+
     h1 {
-    font-size: 3.2em; 
+    font-size: 3.2em;
 }
 
     h2 {
-    font-size: 1.7em; 
+    font-size: 1.7em;
 }
-    
-    
+
+
     .benefix-logo {
-    width: 200px; 
+    width: 200px;
 }
-    
-    
+
+
     li  {
-    border: solid 6px #e8c52e; 
-    padding: 3%; 
-    text-align: center; 
-    margin-bottom: 9%; 
+    border: solid 6px #e8c52e;
+    padding: 3%;
+    text-align: center;
+    margin-bottom: 9%;
     }
-    
-    
-    li a  { 
+
+
+    li a  {
    font-size: 1.7em;
-   
-        
+
+
     }
-    
+
     footer  {
     text-align: center;
-    color: white; 
-    font-family: "lato"; 
+    color: white;
+    font-family: "lato";
     font-size: 1.4em;
     }
 
 
-    
-    
 
-    
+
+
+
 }
 
 
@@ -160,20 +198,20 @@ footer  {
 
 
 @media screen and (min-width: 1280px)  {
-    
 
-#page-wrapper {
+
+  #page-wrapper {
     background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
-    background-size: cover; 
+    background-size: cover;
     background-position: 0% 0%;
-    
+  }
 
+  p {
+  width:40%;
+  }
 
+  .about-us li {
+    display: inline-block;
+  }
 
-
-
-
-
-
-
-
+}
