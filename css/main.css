@@ -1,19 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic,300,100italic,100);
 
+@font-face{ 
+	font-family: 'Neris';
+	src: url('Neris.eot');
+	src: url('Neris.eot?iefix') format('eot'),
+	     url('Neris.woff') format('woff'),
+	     url('Neris.ttf') format('truetype'),
+	     url('Neris.svg#webfont') format('svg');
+}
+
 
 #page-wrapper {
     background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
+    background-image: -webkit-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
+    background-image: -moz-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
+    background-image: -o-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
     background-repeat: no-repeat;
-     background-position: 40% 30%;
-    
-   
-     
+    background-position: 40% 30%;
 }
 
 
 
 main {
-    margin: 0% 7% 0% 7%; 
+    margin: 0% 7%; 
 }
 
 
@@ -34,25 +43,23 @@ header {
 
 /* Font styling */
 
-h1, h2 {
+
+h1 {
+    font-size: 1.6em;
+    font-family: "Neris";
+    color: white;
+    text-align: center; 
+}
+
+h2 {
+    font-size: 0.8em; 
     font-family: "lato";
     color: white;
     text-align: center; 
 }
 
 
-h1 {
-    font-size: 1.6em; 
-}
-
-h2 {
-    font-size: 0.8em; 
-}
-
-
-
-
-/* Second navigation */
+/* Navigation */
 
 
 .second-nav {
@@ -68,7 +75,7 @@ ul {
 li a {
     text-decoration: none;
     list-style-type: none;
-    font-family: "lato";
+    font-family: "Neris";
     font-weight: 900; 
     color: #e8c52e; 
    }
@@ -92,11 +99,7 @@ footer  {
     color: white; 
     font-family: "lato"; 
     font-size: 0.8em;
-
-    
-    
-    
-    }
+}
 
 .social {
     height: 25px; 
@@ -110,28 +113,28 @@ footer  {
 @media screen and (min-width: 768px)  {
     
     main {
-    margin: ; 
+        margin: ; 
 }
     
     h1 {
-    font-size: 3.2em; 
+        font-size: 3.2em; 
 }
 
     h2 {
-    font-size: 1.7em; 
+        font-size: 1.6em; 
 }
     
     
     .benefix-logo {
-    width: 200px; 
+        width: 200px; 
 }
     
     
     li  {
-    border: solid 6px #e8c52e; 
-    padding: 3%; 
-    text-align: center; 
-    margin-bottom: 9%; 
+        border: solid 6px #e8c52e; 
+        padding: 3%; 
+        text-align: center; 
+        margin-bottom: 9%; 
     }
     
     
@@ -142,17 +145,8 @@ footer  {
     }
     
     footer  {
-    text-align: center;
-    color: white; 
-    font-family: "lato"; 
-    font-size: 1.4em;
-    }
-
-
-    
-    
-
-    
+        font-size: 1.4em;
+    }    
 }
 
 
@@ -163,10 +157,71 @@ footer  {
     
 
 #page-wrapper {
-    background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
-    background-size: cover; 
-    background-position: 0% 0%;
     
+    background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
+    background-image: -webkit-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
+    background-image: -moz-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
+    background-image: -o-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
+    background-size: cover; 
+    background-position: ;
+    
+    }
+    
+    
+    .second-nav {
+    margin: 10% 0%; 
+}
+
+
+ul {
+    display: flex; 
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    margin: 0 10%
+    
+}
+
+li  {
+    flex: 1;               /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+    -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
+    -ms-flex: 1;           /* IE 10 */
+    margin: 0 10% 0 0; 
+    padding: 1%; 
+    }
+    
+    li:last-child  { 
+    margin: 0; 
+
+    }
+    
+    main {
+    margin: 0% 8%; 
+}
+    
+}
+    
+
+
+/* No greater than 767px, no less than 400px */
+
+    @media (max-width:767px) and (min-width:400px) {
+        
+    h1 {
+        font-size:2.2em;
+         }
+    h2 {
+        font-size:1.2em;
+    }
+        
+        .benefix-logo {
+        width: 150px; 
+             }
+        
+        }
+
 
 
 
