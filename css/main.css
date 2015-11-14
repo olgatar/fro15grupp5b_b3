@@ -1,0 +1,346 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic,300,100italic,100);
+
+@font-face{
+	font-family: 'Neris';
+	src: url('Neris.eot');
+	src: url('Neris.eot?iefix') format('eot'),
+	     url('Neris.woff') format('woff'),
+	     url('Neris.ttf') format('truetype'),
+	     url('Neris.svg#webfont') format('svg');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+#page-wrapper {
+    background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
+    background-image: -webkit-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
+    background-image: -moz-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
+    background-image: -o-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
+    background-repeat: no-repeat;
+    background-position: 40% 30%;
+
+}
+
+
+
+main {
+
+    margin: 0% 7%;
+
+}
+
+
+/* header */
+
+
+header {
+    width: 90%;
+    margin: 7% auto;
+}
+
+
+.benefix-logo {
+    width: 100px;
+
+}
+
+
+
+/* Font styling */
+
+
+h1 {
+    font-size: 1.6em;
+    font-family: "Neris";
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 0.8em;
+    font-family: "lato";
+    color: white;
+    text-align: center;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1em auto;
+	padding: 0 5%;
+	max-width: 720px;
+}
+
+
+/* Navigation */
+
+
+.second-nav {
+    margin: 10% 0%;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Neris";
+    font-weight: 900;
+    color: #e8c52e;
+
+   }
+
+li  {
+    list-style-type: none;
+    border-color: #e8c52e;
+    border-style: solid;
+    padding: 3%;
+    text-align: center;
+    margin-bottom: 5%;
+    }
+
+
+/* About us */
+
+.about-us {
+  	background-color: #fff;
+  	padding: 0 0;
+		width: 100%;
+}
+
+.about-us h1,
+.about-us h2 {
+  	color: #000;
+}
+
+.about-us h1 {
+  	font-weight: normal;
+		background-color: #e8c52e;
+		padding: 15px 0 15px;
+		margin: 0;
+		width: 100%;
+}
+
+.about-us h2 {
+  	color: #000;
+  	margin-top: 2em;
+		font-family: 'Neris', sans-serif;
+		font-size: 1.2em;
+}
+
+.about-us ul {
+		text-align: center;
+		max-width: 720px;
+		margin: 20px auto 0;
+		padding: 0;
+}
+
+
+
+.about-us li {
+		display: inline-block;
+  	border: none;
+  	padding: 35px 0 35px;
+		margin: 0 0.5% 0;
+  	text-align: center;
+  	font-family: 'Neris', sans-serif;
+  	font-weight: bold;
+  	color: #e8c52e;
+  	font-size: 0.95em;
+		width: 100px;
+		height: 101px;
+}
+
+.about-us li:nth-child(1) {
+	background: url("../img/icon_concept.png") no-repeat;
+	margin-left: 0;
+	background-size: 100%;
+
+}
+
+.about-us li:nth-child(2) {
+	background: url("../img/icon_webdesign.png") no-repeat;
+	background-size: 100%;
+
+}
+
+.about-us li:nth-child(3) {
+	background: url("../img/icon_development.png") no-repeat;
+	margin-right: 0;
+	background-size: 100%;
+}
+
+
+/* Footer */
+
+
+footer  {
+    text-align: center;
+    color: white;
+    font-family: "lato";
+    font-size: 0.8em;
+
+    }
+
+
+.social {
+    height: 25px;
+    padding: 5px;
+}
+
+
+
+/* Media queries tablet size */
+
+@media screen and (min-width: 768px)  {
+
+
+    h1 {
+    font-size: 3.2em;
+}
+
+    h2 {
+    font-size: 1.7em;
+    font-size: 3.2em;
+}
+
+    h2 {
+        font-size: 1.6em;
+
+}
+
+
+    .benefix-logo {
+
+        width: 200px;
+
+}
+
+
+    li  {
+        border: solid 6px #e8c52e;
+        padding: 3%;
+        text-align: center;
+        margin-bottom: 9%;
+
+    }
+
+
+    li a  {
+   font-size: 1.7em;
+    }
+
+    footer  {
+    text-align: center;
+    color: white;
+    font-family: "lato";
+    font-size: 1.4em;
+    }
+
+		p {
+			width:80%;
+		}
+
+		.about-us li {
+		  	padding: 80px 0 80px;
+				margin: 10px 20px 0;
+		  	text-align: center;
+		  	font-size: 1.7em;
+				width: 200px;
+				height: 201px;
+		}
+
+		.about-us h2 {
+		  	margin-top: 5em;
+				margin-bottom: 1em;
+		}
+
+}
+
+
+/* Media queries desktop size */
+
+
+@media screen and (min-width: 1280px)  {
+
+
+#page-wrapper {
+
+    background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
+    background-image: -webkit-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
+    background-image: -moz-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
+    background-image: -o-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
+    background-size: cover;
+    background-position: ;
+
+    }
+
+
+    .second-nav {
+    margin: 10% 0%;
+}
+
+
+ul {
+    display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    margin: 0 10%
+
+}
+
+li  {
+    flex: 1;               /* NEW, Spec - Firefox, Chrome, Opera */
+    -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+    -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
+    -ms-flex: 1;           /* IE 10 */
+    margin: 0 10% 0 0;
+    padding: 1%;
+    }
+
+    li:last-child  {
+    margin: 0;
+
+    }
+
+    main {
+    margin: 0% 8%;
+	}
+
+	.about-us li {
+			margin: 10px 20px 0;
+	}
+
+}
+
+
+
+/* No greater than 767px, no less than 400px */
+
+    @media (max-width:767px) and (min-width:400px) {
+
+    h1 {
+        font-size:2.2em;
+    }
+    h2 {
+        font-size:1.2em;
+    }
+
+    .benefix-logo {
+        width: 150px;
+    }
+
+
+
+}
