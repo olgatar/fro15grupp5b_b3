@@ -269,14 +269,6 @@ button {
 
 }
 
-.contact-us li a {
-	color: #00998a;
-	font-size: 0.7em;
-	font-weight: normal;
-	margin: 5px 5px 5px 5px;
-}
-
-
 .contact-details {
 	margin: 10px auto;
   padding: 10px 20px;
@@ -288,19 +280,23 @@ button {
 
 .contact-details li {
 	text-align: left;
+	display: inline-block;
 	padding: 0;
 	margin: 0 auto;
 }
 
 .contact-details li a {
+	color: #00998a;
+	font-weight: normal;
 	text-align: left;
-	padding: 0;
-	margin: 0 auto;
+	padding: 0 15px 0 0;
+	margin: 5px 5px 5px 5px;
+	font-size: 0.6em;
 }
 
 .social-contact {
 	height: 10px;
-	padding-right: 10px;
+	padding-right: 5px;
 }
 
 
@@ -390,19 +386,24 @@ footer  {
 		}
 
 		.contact {
-			max-width: 680px;
+			max-width: 760px;
 			margin: 0 auto;
 		}
 
 		.contact-form {
 			display: inline-block;
-			width: 43%;
+			width: 50%;
 			float: left;
+			padding-left: 50px;
+		}
+
+		textarea {
+			height: 150px;
 		}
 
 		.contact-details {
 			display: inline-block;
-			width: 43%;
+			width: 30%;
 			float: right;
 		}
 
@@ -410,16 +411,9 @@ footer  {
 			margin-bottom: 30px;
 		}
 
-		.contact-form {
-			max-width: 360px;
-		}
-
-		.contact-details {
-			max-width: 260px;
-		}
-
 		.contact-details li {
 			padding-bottom: 10px;
+			display: block;
 		}
 
 		.contact-details li a {
@@ -490,6 +484,8 @@ li  {
 			margin: 10px 20px 0;
 	}
 
+
+
 }
 
 
@@ -516,5 +512,10 @@ li  {
 		.contact-form, .contact-details {
 			max-width: 360px;
 		}
+
+		.contact-details li a {
+			font-size: 0.7em;
+		}
+
 
 }
