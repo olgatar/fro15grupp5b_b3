@@ -2,7 +2,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic,300,100italic,100);
 
-@font-face{ 
+@font-face{
 	font-family: 'Neris';
 	src: url('../webfonts/Neris.eot');
 	src: url('../webfonts/Neris.eot?iefix') format('eot'),
@@ -12,11 +12,11 @@
     
 }
 
-
 body {
   margin: 0;
   background: rgba(0, 0, 0, 0.9); 
-}
+    
+    }
 
 
 .landingpage {
@@ -32,8 +32,6 @@ body {
     background-repeat: no-repeat;
 
 }
-
-
 
 
 /* header */
@@ -89,10 +87,6 @@ header {
     text-align: left; 
     padding: 10px; 
     background-color: rgba(0, 0, 0, 0.9);
-    
-    
-   
-    
     }
 
 .header-li {
@@ -101,24 +95,19 @@ header {
 
 .header-ul:hover .header-li{
     display: block; 
-    
+
 }
 
 
 .benefix-logo {
     width: 100px; 
-     margin-left: 15px; 
+    margin-left: 15px; 
     margin-top: 15px; 
     
-   
-    
-
 }
 
 
-
 /* Font styling */
-
 
 .landingpage-h1 {
     font-size: 1.6em;
@@ -138,6 +127,16 @@ header {
 }
 
 
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1em auto;
+	padding: 0 5%;
+	max-width: 720px;
+}
+
+
 /* Navigation Landingpage */
 
 
@@ -149,55 +148,241 @@ header {
 .landingpage-ul {
     margin: 0; 
     padding: 0; 
+
 }
 
 .landingpage-li a {
     text-decoration: none;
     list-style-type: none;
     font-family: "Neris";
-    font-weight: 900; 
-    color: #e8c52e; 
+    font-weight: 900;
+    color: #e8c52e;
+
    }
 
 .landingpage-li  {
     list-style-type: none;
     border-color: #e8c52e;
-    border-style: solid; 
-    padding: 3%; 
-    text-align: center; 
-    margin-bottom: 5%; 
+    border-style: solid;
+    padding: 3%;
+    text-align: center;
+    margin-bottom: 5%;
     }
 
 
+/* About us */
 
-/* Footer */
+.about-us {
+  	background-color: #fff;
+  	padding: 0 0;
+		width: 100%;
+}
+
+.about-us h1,
+.about-us h2 {
+  	color: #000;
+}
+
+.about-us h1 {
+  	font-weight: normal;
+		background-color: #e8c52e;
+		padding: 15px 0 15px;
+		margin: 0;
+		width: 100%;
+}
+
+.about-us h2 {
+  	color: #000;
+  	margin-top: 2em;
+		font-family: 'Neris', sans-serif;
+		font-size: 1.2em;
+}
+
+.about-us ul {
+		text-align: center;
+		max-width: 720px;
+		margin: 20px auto 0;
+		padding: 0;
+}
+
+
+
+.about-us li {
+		display: inline-block;
+  	border: none;
+  	padding: 35px 0 35px;
+		margin: 0 0.5% 0;
+  	text-align: center;
+  	font-family: 'Neris', sans-serif;
+  	font-weight: bold;
+  	color: #e8c52e;
+  	font-size: 0.95em;
+		width: 100px;
+		height: 101px;
+}
+
+.about-us li:nth-child(1) {
+	background: url("../img/icon_concept.png") no-repeat;
+	margin-left: 0;
+	background-size: 100%;
+
+}
+
+.about-us li:nth-child(2) {
+	background: url("../img/icon_webdesign.png") no-repeat;
+	background-size: 100%;
+
+}
+
+.about-us li:nth-child(3) {
+	background: url("../img/icon_development.png") no-repeat;
+	margin-right: 0;
+	background-size: 100%;
+}
+
+/* Contact us */
+
+.contact-us {
+	background-color: #fff;
+	padding: 0;
+	width: 100%;
+}
+
+.contact-us h1 {
+	margin: 0;
+	padding: 15px 0;
+	background-color: #00998a;
+	font-weight: normal;
+	width: 100%;
+}
+
+.contact-us h2 {
+	color: #000;
+	font-family: 'Neris', sans-serif;
+	font-size: 1.2em;
+	margin-top: 1em;
+}
+
+form {
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+	font-family: 'Neris', sans-serif;
+	font-size: 0.9em;
+	text-align: left;
+}
+
+input[type="text"],
+input[type="email"] {
+	height: 25px;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	margin-bottom: 20px;
+	width: 100%;
+	background: rgba(0,153,138,0.3);
+	border: none;
+	font-size: 0.8em;
+	padding: 2px;
+	margin: 0;
+	outline: 0;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	border-radius: 5px;
+}
+
+.form-hint {
+	display: block;
+	font-family: 'Neris', sans-serif;
+	font-size: 0.7em;
+	text-align: left;
+	display: none;
+}
+
+button {
+  padding: 5px 10px;
+  color: #000;
+  background-color: rgba(0,153,138,0.3);
+  font-size: 0.8em;
+	font-weight: bold;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid #00998a;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.3) inset;
+	display: block;
+}
+
+.contact-us li {
+	border: none;
+	padding: 0;
+	margin: 10px auto;
+
+}
+
+.contact-details {
+	margin: 10px auto;
+  padding: 10px 20px;
+}
+
+.contact-details h2 {
+	text-align: left;
+}
+
+.contact-details li {
+	text-align: left;
+	display: inline-block;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.contact-details li a {
+	color: #00998a;
+	font-weight: normal;
+	text-align: left;
+	padding: 0 15px 0 0;
+	margin: 5px 5px 5px 5px;
+	font-size: 0.6em;
+}
+
+.social-contact {
+	height: 10px;
+	padding-right: 5px;
+}
+
+
+    /* Footer */
 
 
 footer  {
     text-align: center;
-    color: white; 
-    font-family: "lato"; 
+    color: white;
+    font-family: "lato";
     font-size: 0.8em;
-
-    
-    
-    
     
 }
 
 .social {
     height: 25px; 
     padding: 15px 5px 0px 5px; 
-
-  
-
 }
+
 
 
 
 /* Media queries tablet size */
 
 @media screen and (min-width: 768px)  {
+<<<<<<< HEAD
  
     
 .landingpage {
@@ -239,19 +424,73 @@ header {
     
 .landingpage-li  {
         border: solid 6px #e8c52e; 
-    
     }
     
     
 .landingpage-li a  { 
+
    font-size: 1.7em;
-   
-        
     }
-    
-    footer  {
-        font-size: 1em;
-    }    
+
+		p {
+			width:80%;
+		}
+
+		.about-us li {
+		  	padding: 80px 0 80px;
+				margin: 10px 20px 0;
+		  	text-align: center;
+		  	font-size: 1.7em;
+				width: 200px;
+				height: 201px;
+		}
+
+		.about-us h2 {
+		  	margin-top: 5em;
+				margin-bottom: 1em;
+		}
+
+		.contact {
+			max-width: 760px;
+			margin: 0 auto;
+		}
+
+		.contact-form {
+			display: inline-block;
+			width: 50%;
+			float: left;
+			padding-left: 50px;
+		}
+
+		textarea {
+			height: 150px;
+		}
+
+		.contact-details {
+			display: inline-block;
+			width: 30%;
+			float: right;
+		}
+
+		.contact-us h2 {
+			margin-bottom: 30px;
+		}
+
+		.contact-details li {
+			padding-bottom: 10px;
+			display: block;
+		}
+
+		.contact-details li a {
+			font-size: 0.8em;
+		}
+
+		.social-contact {
+			height: 0.9em;
+			padding-right: 0.9em;
+		}
+
+
 }
 
 
@@ -274,7 +513,7 @@ header {
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
     margin: 0 10%
-    
+
 }
 
 .landingpage-li  {
@@ -282,9 +521,10 @@ header {
     -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
     -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
     -ms-flex: 1;           /* IE 10 */
-    margin: 0 10% 0 0; 
-    padding: 1%; 
+    margin: 0 10% 0 0;
+    padding: 1%;
     }
+
     
 .landingpage-li:last-child  { 
     margin: 0; 
@@ -303,14 +543,15 @@ header {
     
     }
     
-
+	.about-us li {
+			margin: 10px 20px 0;
+	}
     
 }
     
 /* No greater than 767px, no less than 400px */
 
     @media (max-width:767px) and (min-width:400px) {
-        
     .landingpage {
     margin-top: 74px;
     }
@@ -325,16 +566,17 @@ header {
          }
         
 .landingpage-h2 {
+
         font-size:1.2em;
         line-height: 25px; 
     }
+
         
 .benefix-logo {
     margin-left: 25px; 
     margin-top: 25px; 
-    
-        
-        }
+    width: 150px;
+}
         
 .header-menu { 
     width: 45px; 
@@ -343,4 +585,18 @@ header {
         
         }
     
-     
+		.contact-details {
+			padding-left: 10px;
+		}
+
+		.contact-form, .contact-details {
+			max-width: 360px;
+		}
+
+		.contact-details li a {
+			font-size: 0.7em;
+		}
+
+
+}
+
