@@ -318,6 +318,7 @@ textarea {
 	width: 100%;
 	background: rgba(0,153,138,0.3);
 	border: none;
+	font-family: 'Lato', sans-serif;
 	font-size: 0.9em;
 	padding: 2px;
 	margin: 0;
@@ -609,7 +610,7 @@ header {
 	.about-us li {
 			margin: 10px 20px 0;
 	}
-	
+
 }
 
 /* No greater than 767px, no less than 400px */
