@@ -2,15 +2,47 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic,300,100italic,100);
 
-@font-face{
-	font-family: 'Neris';
-	src: url('../webfonts/Neris.eot');
-	src: url('../webfonts/Neris.eot?iefix') format('eot'),
-	     url('../webfonts/Neris.woff') format('woff'),
-	     url('../webfonts/Neris.ttf') format('truetype'),
-	     url('../webfonts/Neris.svg#webfont') format('svg');
-    
+@font-face {
+    font-family: 'nerissemibold';
+    src: url('../webfonts/Neris-SemiBold-webfont.eot');
+    src: url('../webfonts/Neris-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/Neris-SemiBold-webfont.woff') format('woff'),
+         url('../webfonts/Neris-SemiBold-webfont.ttf') format('truetype'),
+         url('../webfonts/Neris-SemiBold-webfont.svg#nerissemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+
+@font-face {
+    font-family: 'nerislight';
+    src: url('../webfonts/Neris-Light-webfont.eot');
+    src: url('../webfonts/Neris-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/Neris-Light-webfont.woff') format('woff'),
+         url('../webfonts/Neris-Light-webfont.ttf') format('truetype'),
+         url('../webfonts/Neris-Light-webfont.svg#nerislight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nerisblack';
+    src: url('../webfonts/Neris-Black-webfont.eot');
+    src: url('../webfonts/Neris-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/Neris-Black-webfont.woff') format('woff'),
+         url('../webfonts/Neris-Black-webfont.ttf') format('truetype'),
+         url('../webfonts/Neris-Black-webfont.svg#nerisblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
 
 body {
   margin: 0;
@@ -26,34 +58,28 @@ html {
     
     }
 
-main {
-  margin: 0;
-    padding: 0; 
-
-    
-    }
-
-
 
 
 
 .landingpage {
-    background-image: linear-gradient(to bottom, black, 60%, rgba(255,0,0,0)), url(../img/child.jpg); 
-      background-image: -webkit-linear-gradient(to bottom, black, 60%, rgba(255,0,0,0)), url(../img/child.jpg); 
-      background-image: -moz-linear-gradient(to bottom, black, 60%, rgba(255,0,0,0)), url(../img/child.jpg); 
-      background-image: -o-linear-gradient(to bottom, black, 60%, rgba(255,0,0,0)), url(../img/child.jpg); 
+
+    
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(125,185,232,0) 100%), url(../img/child.jpg); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%), url(../img/child.jpg); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%), url(../img/child.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
     margin-top: 50px; 
-    background-size:cover; 
-    height:200%; 
-    width:100%;
+    background-size:cover;  
     background-position: 40% 50%;
     background-repeat: no-repeat;
-
-}
+	}
 
 
 /* header */
-
 
 header {
     position: fixed; top: 0; left: 0; bottom:0; right: 0; 
@@ -64,9 +90,8 @@ header {
 }
 
 
+
 .header-nav { 
-    
-    width: 100px; 
     float: right;
     top: 0;
     }
@@ -81,8 +106,7 @@ header {
 }
 
 
-.header-ul {
-    width: 100px; 
+.header-ul { 
     padding: 0;
     margin: 0; 
     text-align: right; 
@@ -94,7 +118,7 @@ header {
 .header-li a { 
     text-decoration: none;
     list-style-type: none;
-    font-family: "Neris";
+    font-family: 'nerissemibold';
     font-weight: 900; 
     color: #e8c52e; 
    
@@ -129,10 +153,11 @@ header {
 
 .landingpage-h1 {
     font-size: 1.6em;
-    font-family: "Neris";
+    font-family: 'nerissemibold';
     color: white;
     text-align: center;
-    padding-top: 30px; 
+    margin: 0;
+    padding: 30px 5% 20px; 
 }
 
 .landingpage-h2 {
@@ -140,8 +165,9 @@ header {
     font-family: "lato";
     color: white;
     text-align: center;
-    margin: 0 7%;
     line-height: 20px; 
+    margin: 0;
+    padding: 0 7%; 
 }
 
 
@@ -158,34 +184,40 @@ p {
 /* Navigation Landingpage */
 
 
+   
 .landingpage-nav {
-    margin: 10% 10%; 
+    padding: 10% ;  
 }
 
 
-.landingpage-ul {
-    margin: 0; 
-    padding: 0; 
 
+.landingpage-ul {
+    margin: 0;
+    padding: 0;
 }
 
 .landingpage-li a {
     text-decoration: none;
     list-style-type: none;
-    font-family: "Neris";
+    font-family: 'nerisblack';
     font-weight: 900;
     color: #e8c52e;
-
-   }
+    padding: 0;
+    border: 3px solid #e8c52e;
+    padding: 5px 0;
+    display: block;
+}
 
 .landingpage-li  {
     list-style-type: none;
-    border-color: #e8c52e;
-    border-style: solid;
-    padding: 3%;
     text-align: center;
-    margin-bottom: 5%;
-    }
+    margin-bottom: 10px;
+    padding: 5px; 
+    font-family: 'nerissemibold';
+}
+.landingpage-li:last-child {
+    margin-bottom: 0;
+}
 
 
 /* About us */
@@ -193,14 +225,15 @@ p {
 .about-us {
   	background-color: #fff;
   	padding: 0 0;
-		width: 100%;
+width: 100%;
+    
 }
 
 .about-us h1,
 .about-us h2 {
   	color: #000;
     text-align: center; 
-    font-family: "neris"; 
+    font-family: 'nerislight'; 
 }
 
 .about-us h1 {
@@ -215,7 +248,7 @@ p {
 .about-us h2 {
   	color: #000;
   	margin-top: 2em;
-		font-family: 'Neris', sans-serif;
+		font-family: 'nerislight', sans-serif;
 		font-size: 1.2em;
 }
 
@@ -234,7 +267,7 @@ p {
   	padding: 35px 0 35px;
 		margin: 0 0.5% 0;
   	text-align: center;
-  	font-family: 'Neris', sans-serif;
+  	font-family: 'nerislight', sans-serif;
   	font-weight: bold;
   	color: #e8c52e;
   	font-size: 0.95em;
@@ -275,13 +308,13 @@ p {
 	background-color: #00998a;
 	font-weight: normal;
 	width: 100%;
-    font-family: "neris"; 
+    font-family: 'nerislight'; 
     text-align: center; 
 }
 
 .contact-us h2 {
 	color: #000;
-	font-family: 'Neris', sans-serif;
+	font-family: 'nerislight', sans-serif;
 	font-size: 1.2em;
 	margin-top: 1em;
 }
@@ -295,7 +328,7 @@ form {
 label {
   display: block;
   margin-bottom: 5px;
-	font-family: 'Neris', sans-serif;
+	font-family: 'nerislight', sans-serif;
 	font-size: 0.9em;
 	text-align: left;
     
@@ -333,7 +366,7 @@ textarea {
 
 .form-hint {
 	display: block;
-	font-family: 'Neris', sans-serif;
+	font-family: 'nerislight', sans-serif;
 	font-size: 0.7em;
 	text-align: left;
 	display: none;
@@ -427,64 +460,54 @@ footer  {
 
 @media screen and (min-width: 768px)  {
     
+.landingpage-nav  {
+   padding: 5% 10% 10%; 
+    }
+                
+    .landingpage-li  {
+    margin: 30px; 
+    }
     
-       h1 {
+    .landingpage-li a {
+    
+    border: 6px solid #e8c52e;
+    padding: 10px 0;
+
+
+}
+    
+    
+h1 {
     font-size: 3.2em;
 }
 
-    h2 {
+h2 {
     font-size: 1.7em;
     font-size: 3.2em;
 }
 
-    h2 {
-        font-size: 1.6em;
+h2 {
+    font-size: 1.6em;
 
 }
 
  
     
-.landingpage {
-    margin-top: 100px;
-    }
-    
-    
-header {
-    height: 100px;
-    }
-    
 .landingpage-h1 {
         font-size: 3.2em; 
+    padding: 50px 0 40px 0; 
 }
+    
+    
 
 .landingpage-h2 {
         font-size: 1.6em;
         line-height: 30px; 
+        padding: 0 10%; 
 }
     
     
-.benefix-logo {
-    width: 150px;
-    margin-left: 30px; 
-    margin-top: 30px; 
-     
-}
-    
-    
-    
-    .header-menu { 
-    width: 60px; 
-    margin-right: 30px; 
-    margin-top: 30px; 
 
-    
-    }
-    
-    
-.landingpage-li  {
-        border: solid 6px #e8c52e; 
-    }
-    
     
 .landingpage-li a  { 
 
@@ -558,14 +581,10 @@ header {
 /* Media queries desktop size */
 
 
-@media screen and (min-width: 1180px)  {
+@media screen and (min-width: 992px)  {
     
     
     
-.landingpage-nav {
-    margin: 10% 0%; 
-}
-
 
 .landingpage-ul {
     display: flex; 
@@ -573,7 +592,7 @@ header {
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-    margin: 0 10%
+
 
 }
 
@@ -582,31 +601,49 @@ header {
     -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
     -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
     -ms-flex: 1;           /* IE 10 */
-    margin: 0 10% 0 0;
-    padding: 1%;
+    margin: 50px; 
     }
+    
+    .landingpage-li a {
+    
+    border: 6px solid #e8c52e;
+    padding: 12px 0;
+   
+}
 
-    
-.landingpage-li:last-child  { 
-    margin: 0; 
 
-    }
+ 
     
-.benefix-logo {
-    width: 200px;
-    margin-left: 30px; 
-    margin-top: 30px;
-             }
-.header-menu { 
-    width: 60px; 
-    margin-right: 30px; 
-    margin-top: 30px; 
-    
-    }
+     .landingpage-h1 {
+  
+    padding: 50px 5% 50px; 
+}
     
 	.about-us li {
 			margin: 10px 20px 0;
 	}
+    
+    
+
+    
+    .benefix-logo {
+    margin-left: 25px; 
+    margin-top: 20px; 
+    width: 150px;
+}
+        
+.header-menu { 
+    width: 45px; 
+    margin-right: 25px; 
+    margin-top: 22px; }
+    
+    header {
+    height: 80px;
+    }
+        
+    .landingpage {
+        margin-top: 80px; 
+    }
     
 }
     
@@ -623,14 +660,11 @@ h2 {
         font-size:1.2em;
     }
         
-.landingpage {
-    margin-top: 74px;
-    }
+        
+
+
+        
     
-    
-header {
-    height: 75px;
-    }
         
 .landingpage-h1 {
         font-size:2.2em;
@@ -643,18 +677,6 @@ header {
     }
 
         
-.benefix-logo {
-    margin-left: 25px; 
-    margin-top: 25px; 
-    width: 150px;
-}
-        
-.header-menu { 
-    width: 45px; 
-    margin-right: 25px; 
-    margin-top: 22px; }
-        
-        }
     
 		.contact-details {
 			padding-left: 10px;
@@ -668,6 +690,7 @@ header {
 			font-size: 0.7em;
 		}
 
+        
 
 }
 
