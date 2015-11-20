@@ -2,6 +2,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic,300,100italic,100);
 
+
 @font-face {
     font-family: 'nerissemibold';
     src: url('../webfonts/Neris-SemiBold-webfont.eot');
@@ -46,18 +47,17 @@
 
 body {
   margin: 0;
-    padding: 0; 
+    padding: 0;
 
-    
+
     }
 
 html {
   margin: 0;
-    padding: 0; 
+    padding: 0;
 
-    
+
     }
-
 
 
 
@@ -82,11 +82,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 /* header */
 
 header {
-    position: fixed; top: 0; left: 0; bottom:0; right: 0; 
-    width: 100%; 
-    height: 50px; 
+    position: fixed; top: 0; left: 0; bottom:0; right: 0;
+    width: 100%;
+    height: 50px;
     z-index: 1;
-    background: rgba(0, 0, 0,1);  
+    background: rgba(0, 0, 0,1);
 }
 
 
@@ -95,57 +95,58 @@ header {
     float: right;
     top: 0;
     }
-    
-.header-menu { 
-    width: 30px; 
-    margin-right: 15px; 
-    margin-top: 15px; 
-   
-    
-    
+
+.header-menu {
+    width: 30px;
+    margin-right: 15px;
+    margin-top: 15px;
+
+
+
 }
+
 
 
 .header-ul { 
     padding: 0;
-    margin: 0; 
-    text-align: right; 
-    
-   
+    margin: 0;
+    text-align: right;
+
+
     }
 
 
-.header-li a { 
+.header-li a {
     text-decoration: none;
     list-style-type: none;
     font-family: 'nerissemibold';
     font-weight: 900; 
     color: #e8c52e; 
-   
+
    }
 
 .header-li  {
     list-style-type: none;
-    text-align: left; 
-    padding: 10px; 
+    text-align: left;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.9);
     }
 
 .header-li {
-    display: none; 
+    display: none;
 }
 
 .header-ul:hover .header-li{
-    display: block; 
+    display: block;
 
 }
 
 
 .benefix-logo {
-    width: 100px; 
-    margin-left: 15px; 
-    margin-top: 15px; 
-    
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 15px;
+
 }
 
 
@@ -158,10 +159,11 @@ header {
     text-align: center;
     margin: 0;
     padding: 30px 5% 20px; 
+
 }
 
 .landingpage-h2 {
-    font-size: 0.8em; 
+    font-size: 0.8em;
     font-family: "lato";
     color: white;
     text-align: center;
@@ -188,7 +190,6 @@ p {
 .landingpage-nav {
     padding: 10% ;  
 }
-
 
 
 .landingpage-ul {
@@ -242,7 +243,7 @@ width: 100%;
     padding: 15px 0 15px;
     margin: 0;
     width: 100%;
-    
+
 }
 
 .about-us h2 {
@@ -308,7 +309,7 @@ width: 100%;
 	background-color: #00998a;
 	font-weight: normal;
 	width: 100%;
-    font-family: 'nerislight'; 
+    font-family: 'nerislight', sans-serif; 
     text-align: center; 
 }
 
@@ -319,34 +320,30 @@ width: 100%;
 	margin-top: 1em;
 }
 
+
 form {
   margin: 10px auto;
   padding: 10px 20px;
-  
+
 }
 
 label {
   display: block;
   margin-bottom: 5px;
-	font-family: 'nerislight', sans-serif;
-	font-size: 0.9em;
+font-family: 'Lato', sans-serif;
+font-size: 1em;
 	text-align: left;
-    
-}
 
-ul {
-    
-list-style-type: none; 
 }
 
 
 input[type="text"],
 input[type="email"] {
-	height: 25px;
+	height: 30px;
 }
 
 textarea {
-	height: 100px;
+	height: 150px;
 }
 
 input[type="text"],
@@ -356,7 +353,8 @@ textarea {
 	width: 100%;
 	background: rgba(0,153,138,0.3);
 	border: none;
-	font-size: 0.8em;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.9em;
 	padding: 2px;
 	margin: 0;
 	outline: 0;
@@ -366,8 +364,8 @@ textarea {
 
 .form-hint {
 	display: block;
-	font-family: 'nerislight', sans-serif;
-	font-size: 0.7em;
+    font-family: 'Lato', sans-serif;
+	font-size: 0.8em;
 	text-align: left;
 	display: none;
 }
@@ -376,7 +374,8 @@ button {
   padding: 5px 10px;
   color: #000;
   background-color: rgba(0,153,138,0.3);
-  font-size: 0.8em;
+	font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
 	font-weight: bold;
   text-align: center;
   font-style: normal;
@@ -384,6 +383,11 @@ button {
   border: 1px solid #00998a;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.3) inset;
 	display: block;
+}
+
+.contact-us ul {
+	list-style-type: none;
+	padding: 0;
 }
 
 .contact-us li {
@@ -411,16 +415,18 @@ button {
 
 .contact-details li a {
 	color: #00998a;
+	font-family: 'Lato', sans-serif;
 	font-weight: normal;
 	text-align: left;
+	line-height: 2em;
 	padding: 0 15px 0 0;
 	margin: 5px 5px 5px 5px;
-	font-size: 0.6em;
+	font-size: 0.9em;
 }
 
 .social-contact {
-	height: 10px;
-	padding-right: 5px;
+	height: 1em;
+	padding-right: 0.8em;
 }
 
 
@@ -437,20 +443,20 @@ footer  {
     font-size: 0.8em;
     clear: both;
     background-color: rgba(0, 0, 0, 0.9);
-    width: 100%; 
+    width: 100%;
     }
 
 
 .footer-paragraph {
    margin: 0 auto;
-    padding: 3px 0 10px ; 
-  
+    padding: 3px 0 10px ;
+
 }
 
 
 .social {
-    height: 25px; 
-    padding: 15px 5px 0px 5px; 
+    height: 25px;
+    padding: 15px 5px 0px 5px;
 }
 
 
@@ -459,6 +465,7 @@ footer  {
 /* Media queries tablet size */
 
 @media screen and (min-width: 768px)  {
+
     
 .landingpage-nav  {
    padding: 5% 10% 10%; 
@@ -496,6 +503,7 @@ h2 {
 .landingpage-h1 {
         font-size: 3.2em; 
     padding: 50px 0 40px 0; 
+
 }
     
     
@@ -511,7 +519,8 @@ h2 {
     
 .landingpage-li a  { 
 
-   font-size: 1.7em;
+        line-height: 30px;
+        font-size: 1.7em;
     }
 
 		p {
@@ -533,7 +542,7 @@ h2 {
 		}
 
 		.contact {
-			max-width: 760px;
+			max-width: 840px;
 			margin: 0 auto;
 		}
 
@@ -545,12 +554,12 @@ h2 {
 		}
 
 		textarea {
-			height: 150px;
+			height: 200px;
 		}
 
 		.contact-details {
 			display: inline-block;
-			width: 30%;
+			width: 33%;
 			float: right;
 		}
 
@@ -563,17 +572,16 @@ h2 {
 			display: block;
 		}
 
-		.contact-details li a {
-			font-size: 0.8em;
-		}
 
 		.social-contact {
-			height: 0.9em;
-			padding-right: 0.9em;
+			height: 1.1em;
+			padding-right: 1em;
 		}
-    
 
-   
+		.contact-form ul,
+		.contact-details ul {
+			display: block;
+		}
 
 }
 
@@ -584,10 +592,9 @@ h2 {
 @media screen and (min-width: 992px)  {
     
     
-    
 
 .landingpage-ul {
-    display: flex; 
+    display: flex;
     display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -612,9 +619,7 @@ h2 {
 }
 
 
- 
-    
-     .landingpage-h1 {
+.landingpage-h1 {
   
     padding: 50px 5% 50px; 
 }
@@ -646,12 +651,12 @@ h2 {
     }
     
 }
-    
+
 /* No greater than 767px, no less than 400px */
 
     @media (max-width:767px) and (min-width:400px) {
-        
-        
+
+
 h1 {
         font-size:2.2em;
     }
@@ -659,25 +664,24 @@ h1 {
 h2 {
         font-size:1.2em;
     }
-        
-        
 
-
-        
-    
-        
 .landingpage-h1 {
         font-size:2.2em;
          }
-        
+
 .landingpage-h2 {
 
         font-size:1.2em;
-        line-height: 25px; 
+        line-height: 25px;
     }
 
-        
-    
+
+
+	.social-contact {
+		height: 1.1em;
+		padding-right: 1.1em;
+	}
+
 		.contact-details {
 			padding-left: 10px;
 		}
@@ -687,10 +691,13 @@ h2 {
 		}
 
 		.contact-details li a {
-			font-size: 0.7em;
+			font-size: 0.9em;
 		}
 
-        
+		button {
+			font-size: 1em;
+		}
+
+
 
 }
-
