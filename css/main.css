@@ -1,72 +1,177 @@
+/* fonts */
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic,300,100italic,100);
 
-@font-face{
-	font-family: 'Neris';
-	src: url('Neris.eot');
-	src: url('Neris.eot?iefix') format('eot'),
-	     url('Neris.woff') format('woff'),
-	     url('Neris.ttf') format('truetype'),
-	     url('Neris.svg#webfont') format('svg');
+
+@font-face {
+    font-family: 'nerissemibold';
+    src: url('../webfonts/Neris-SemiBold-webfont.eot');
+    src: url('../webfonts/Neris-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/Neris-SemiBold-webfont.woff') format('woff'),
+         url('../webfonts/Neris-SemiBold-webfont.ttf') format('truetype'),
+         url('../webfonts/Neris-SemiBold-webfont.svg#nerissemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+
+@font-face {
+    font-family: 'nerislight';
+    src: url('../webfonts/Neris-Light-webfont.eot');
+    src: url('../webfonts/Neris-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/Neris-Light-webfont.woff') format('woff'),
+         url('../webfonts/Neris-Light-webfont.ttf') format('truetype'),
+         url('../webfonts/Neris-Light-webfont.svg#nerislight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nerisblack';
+    src: url('../webfonts/Neris-Black-webfont.eot');
+    src: url('../webfonts/Neris-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/Neris-Black-webfont.woff') format('woff'),
+         url('../webfonts/Neris-Black-webfont.ttf') format('truetype'),
+         url('../webfonts/Neris-Black-webfont.svg#nerisblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
 
 body {
-	margin: 0 auto;
-	padding: 0;
-
-}
+  margin: 0;
+    padding: 0;
 
 
-#page-wrapper {
-    background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
-    background-image: -webkit-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
-    background-image: -moz-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
-    background-image: -o-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/ZESKmXX.jpg);
+    }
+
+html {
+  margin: 0;
+    padding: 0;
+
+
+    }
+
+
+
+.landingpage {
+
+
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(125,185,232,0) 100%), url(../img/child.jpg); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%), url(../img/child.jpg); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%), url(../img/child.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    background-size:cover;
+    background-position: 40% 50%;
     background-repeat: no-repeat;
-    background-position: 40% 30%;
-
-}
-
-
-
-main {
-
-    margin: 0% 7%;
-
-}
+	}
 
 
 /* header */
 
-
 header {
-    width: 90%;
-    margin: 7% auto;
+    position: fixed; top: 0; left: 0; bottom:0; right: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    background: rgba(0, 0, 0,1);
+}
+
+
+
+.header-nav {
+    float: right;
+    top: 0;
+    }
+
+.header-menu {
+    width: 30px;
+    margin-right: 15px;
+    margin-top: 15px;
+
+
+
+}
+
+
+
+.header-ul {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+
+
+    }
+
+
+.header-li a {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'nerissemibold';
+    font-weight: 900;
+    color: #e8c52e;
+
+   }
+
+.header-li  {
+    list-style-type: none;
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    }
+
+.header-li {
+    display: none;
+}
+
+.header-ul:hover .header-li{
+    display: block;
+
 }
 
 
 .benefix-logo {
     width: 100px;
+    margin-left: 15px;
+    margin-top: 15px;
 
 }
-
 
 
 /* Font styling */
 
-
-h1 {
+.landingpage-h1 {
     font-size: 1.6em;
-    font-family: "Neris";
+    font-family: 'nerissemibold';
     color: white;
     text-align: center;
+    margin: 0;
+    padding: 30px 5% 20px;
+
 }
 
-h2 {
+.landingpage-h2 {
     font-size: 0.8em;
     font-family: "lato";
     color: white;
     text-align: center;
+    line-height: 20px;
+    margin: 0;
+    padding: 0 7%;
 }
+
 
 p {
   font-family: 'Lato', sans-serif;
@@ -78,36 +183,42 @@ p {
 }
 
 
-/* Navigation */
+/* Navigation Landingpage */
 
 
-.second-nav {
-    margin: 10% 0%;
+
+.landingpage-nav {
+    padding: 10% ;
 }
 
 
-ul {
+.landingpage-ul {
     margin: 0;
     padding: 0;
 }
 
-li a {
+.landingpage-li a {
     text-decoration: none;
     list-style-type: none;
-    font-family: "Neris";
+    font-family: 'nerisblack';
     font-weight: 900;
     color: #e8c52e;
+    padding: 0;
+    border: 3px solid #e8c52e;
+    padding: 5px 0;
+    display: block;
+}
 
-   }
-
-li  {
+.landingpage-li  {
     list-style-type: none;
-    border-color: #e8c52e;
-    border-style: solid;
-    padding: 3%;
     text-align: center;
-    margin-bottom: 5%;
-    }
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: 'nerissemibold';
+}
+.landingpage-li:last-child {
+    margin-bottom: 0;
+}
 
 
 /* About us */
@@ -115,26 +226,30 @@ li  {
 .about-us {
   	background-color: #fff;
   	padding: 0 0;
-		width: 100%;
+width: 100%;
+
 }
 
 .about-us h1,
 .about-us h2 {
   	color: #000;
+    text-align: center;
+    font-family: 'nerislight';
 }
 
 .about-us h1 {
   	font-weight: normal;
-		background-color: #e8c52e;
-		padding: 15px 0 15px;
-		margin: 0;
-		width: 100%;
+    background-color: #e8c52e;
+    padding: 15px 0 15px;
+    margin: 0;
+    width: 100%;
+
 }
 
 .about-us h2 {
   	color: #000;
   	margin-top: 2em;
-		font-family: 'Neris', sans-serif;
+		font-family: 'nerislight', sans-serif;
 		font-size: 1.2em;
 }
 
@@ -153,7 +268,7 @@ li  {
   	padding: 35px 0 35px;
 		margin: 0 0.5% 0;
   	text-align: center;
-  	font-family: 'Neris', sans-serif;
+  	font-family: 'nerislight', sans-serif;
   	font-weight: bold;
   	color: #e8c52e;
   	font-size: 0.95em;
@@ -180,6 +295,85 @@ li  {
 	background-size: 100%;
 }
 
+/* Portfolio */
+
+.portfolio h1 {
+    margin: 0;
+    padding: 15px 0;
+    background-color: #d4145a;
+    font-weight: normal;
+    width: 100%;
+    font-family: 'nerisligt',sans-serif;
+    text-align: center;
+}
+
+.portfolio h2 {
+    color: #000;
+    margin-top: 2em;
+    font-family: 'nerislight' sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.portfolio {
+    width: 100%;
+}
+
+.portfolio-gallery-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 10px 35px;
+}
+
+.portfolio-gallery-ul li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 190px;
+    padding 0;
+    margin: 35px 0;
+
+}
+
+
+.portfolio-gallery-ul li:nth-child(1) {
+    background: url("../img/boy.gif") no-repeat;
+    background-size: 100% 100%;
+    padding: 0;
+}
+
+.portfolio-gallery-ul li:nth-child(2) {
+    background: url("../img/children.gif") no-repeat;
+    background-size: 100% 100%;
+    padding:  0;
+}
+
+.portfolio-gallery-ul li:nth-child(3) {
+    background: url("../img/girl.png") no-repeat;
+    background-size: 100% 100%;
+    padding:  0;
+}
+
+.portfolio-gallery-ul li a {
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'nerislight', sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+
+
+
+
+
 /* Contact us */
 
 .contact-us {
@@ -194,35 +388,41 @@ li  {
 	background-color: #00998a;
 	font-weight: normal;
 	width: 100%;
+    font-family: 'nerislight', sans-serif;
+    text-align: center;
 }
 
 .contact-us h2 {
 	color: #000;
-	font-family: 'Neris', sans-serif;
+	font-family: 'nerislight', sans-serif;
 	font-size: 1.2em;
 	margin-top: 1em;
 }
 
+
 form {
   margin: 10px auto;
   padding: 10px 20px;
+
 }
 
 label {
-  display: block;
-  margin-bottom: 5px;
-	font-family: 'Neris', sans-serif;
-	font-size: 0.9em;
+display: block;
+margin-bottom: 5px;
+font-family: 'Lato', sans-serif;
+font-size: 1em;
 	text-align: left;
+
 }
+
 
 input[type="text"],
 input[type="email"] {
-	height: 25px;
+	height: 30px;
 }
 
 textarea {
-	height: 100px;
+	height: 150px;
 }
 
 input[type="text"],
@@ -232,7 +432,8 @@ textarea {
 	width: 100%;
 	background: rgba(0,153,138,0.3);
 	border: none;
-	font-size: 0.8em;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.9em;
 	padding: 2px;
 	margin: 0;
 	outline: 0;
@@ -242,8 +443,8 @@ textarea {
 
 .form-hint {
 	display: block;
-	font-family: 'Neris', sans-serif;
-	font-size: 0.7em;
+  font-family: 'Lato', sans-serif;
+	font-size: 0.8em;
 	text-align: left;
 	display: none;
 }
@@ -252,7 +453,8 @@ button {
   padding: 5px 10px;
   color: #000;
   background-color: rgba(0,153,138,0.3);
-  font-size: 0.8em;
+	font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
 	font-weight: bold;
   text-align: center;
   font-style: normal;
@@ -260,6 +462,11 @@ button {
   border: 1px solid #00998a;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.3) inset;
 	display: block;
+}
+
+.contact-us ul {
+	list-style-type: none;
+	padding: 0;
 }
 
 .contact-us li {
@@ -287,20 +494,25 @@ button {
 
 .contact-details li a {
 	color: #00998a;
+	font-family: 'Lato', sans-serif;
 	font-weight: normal;
 	text-align: left;
+	line-height: 2em;
 	padding: 0 15px 0 0;
 	margin: 5px 5px 5px 5px;
-	font-size: 0.6em;
+	font-size: 0.9em;
 }
 
 .social-contact {
-	height: 10px;
-	padding-right: 5px;
+	height: 1em;
+	padding-right: 0.8em;
 }
 
 
-/* Footer */
+
+
+    /* Footer */
+
 
 
 footer  {
@@ -308,13 +520,22 @@ footer  {
     color: white;
     font-family: "lato";
     font-size: 0.8em;
-		clear: both;
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
     }
+
+
+.footer-paragraph {
+   margin: 0 auto;
+    padding: 3px 0 10px ;
+
+}
 
 
 .social {
     height: 25px;
-    padding: 5px;
+    padding: 15px 5px 0px 5px;
 }
 
 
@@ -325,46 +546,60 @@ footer  {
 @media screen and (min-width: 768px)  {
 
 
-    h1 {
+.landingpage-nav  {
+   padding: 5% 10% 10%;
+    }
+
+    .landingpage-li  {
+    margin: 30px;
+    }
+
+    .landingpage-li a {
+
+    border: 6px solid #e8c52e;
+    padding: 10px 0;
+
+
+}
+
+
+h1 {
     font-size: 3.2em;
 }
 
-    h2 {
+h2 {
     font-size: 1.7em;
     font-size: 3.2em;
 }
 
-    h2 {
+h2 {
+    font-size: 1.6em;
+
+}
+
+
+
+.landingpage-h1 {
+        font-size: 3.2em;
+    padding: 50px 0 40px 0;
+
+}
+
+
+
+.landingpage-h2 {
         font-size: 1.6em;
-
+        line-height: 30px;
+        padding: 0 10%;
 }
 
 
-    .benefix-logo {
-
-        width: 200px;
-
-}
 
 
-    li  {
-        border: solid 6px #e8c52e;
-        padding: 3%;
-        text-align: center;
-        margin-bottom: 9%;
+.landingpage-li a  {
 
-    }
-
-
-    li a  {
-   font-size: 1.7em;
-    }
-
-    footer  {
-    text-align: center;
-    color: white;
-    font-family: "lato";
-    font-size: 1.4em;
+        line-height: 30px;
+        font-size: 1.7em;
     }
 
 		p {
@@ -386,7 +621,7 @@ footer  {
 		}
 
 		.contact {
-			max-width: 760px;
+			max-width: 840px;
 			margin: 0 auto;
 		}
 
@@ -398,12 +633,12 @@ footer  {
 		}
 
 		textarea {
-			height: 150px;
+			height: 200px;
 		}
 
 		.contact-details {
 			display: inline-block;
-			width: 30%;
+			width: 33%;
 			float: right;
 		}
 
@@ -416,14 +651,24 @@ footer  {
 			display: block;
 		}
 
-		.contact-details li a {
-			font-size: 0.8em;
-		}
 
 		.social-contact {
-			height: 0.9em;
-			padding-right: 0.9em;
+			height: 1.1em;
+			padding-right: 1em;
 		}
+
+		.contact-form ul,
+		.contact-details ul {
+			display: block;
+		}
+
+    /* Portfolio */
+
+    .portfolio-gallery-ul li {
+        width: 47.39%;
+        height: 270px;
+        margin-right: 17px;
+    }
 
 
 }
@@ -432,53 +677,40 @@ footer  {
 /* Media queries desktop size */
 
 
-@media screen and (min-width: 1280px)  {
+@media screen and (min-width: 992px)  {
 
 
-#page-wrapper {
 
-    background-image: linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
-    background-image: -webkit-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
-    background-image: -moz-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
-    background-image: -o-linear-gradient(to bottom, black, 70%, rgba(255,0,0,0)), url(http://i.imgur.com/XImmcMm.jpg);
-    background-size: cover;
-    background-position: ;
-
-    }
-
-
-    .second-nav {
-    margin: 10% 0%;
-}
-
-
-ul {
+.landingpage-ul {
     display: flex;
     display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-    margin: 0 10%
+
 
 }
 
-li  {
+.landingpage-li  {
     flex: 1;               /* NEW, Spec - Firefox, Chrome, Opera */
     -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
     -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
     -ms-flex: 1;           /* IE 10 */
-    margin: 0 10% 0 0;
-    padding: 1%;
+    margin: 50px;
     }
 
-    li:last-child  {
-    margin: 0;
+    .landingpage-li a {
 
-    }
+    border: 6px solid #e8c52e;
+    padding: 12px 0;
 
-    main {
-    margin: 0% 8%;
-	}
+}
+
+
+.landingpage-h1 {
+
+    padding: 50px 5% 50px;
+}
 
 	.about-us li {
 			margin: 10px 20px 0;
@@ -486,24 +718,69 @@ li  {
 
 
 
+
+    .benefix-logo {
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 150px;
 }
 
+.header-menu {
+    width: 45px;
+    margin-right: 25px;
+    margin-top: 22px; }
+
+    header {
+    height: 80px;
+    }
+
+    .landingpage {
+        margin-top: 80px;
+    }
+
+      /* Portfolio */
+
+    .portfolio-gallery-ul li {
+      width: 32.5%;
+      height: 310px;
+      margin-right: 5px;
+    }
+
+    .portfolio-gallery-ul {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
 
 
 /* No greater than 767px, no less than 400px */
 
     @media (max-width:767px) and (min-width:400px) {
 
-    h1 {
+
+h1 {
         font-size:2.2em;
     }
-    h2 {
+
+h2 {
         font-size:1.2em;
     }
 
-    .benefix-logo {
-        width: 150px;
+.landingpage-h1 {
+        font-size:2.2em;
+         }
+
+.landingpage-h2 {
+
+        font-size:1.2em;
+        line-height: 25px;
     }
+
+
+
+	.social-contact {
+		height: 1.1em;
+		padding-right: 1.1em;
+	}
 
 		.contact-details {
 			padding-left: 10px;
@@ -514,8 +791,21 @@ li  {
 		}
 
 		.contact-details li a {
-			font-size: 0.7em;
+			font-size: 0.9em;
 		}
+
+		button {
+			font-size: 1em;
+		}
+
+
+    /* Portfolio */
+
+.portfolio-gallery-ul li {
+      height: 310px;
+    }
+
+
 
 
 }
