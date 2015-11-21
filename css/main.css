@@ -295,6 +295,85 @@ width: 100%;
 	background-size: 100%;
 }
 
+/* Portfolio */
+
+.portfolio h1 {
+    margin: 0;
+    padding: 15px 0;
+    background-color: #d4145a;
+    font-weight: normal;
+    width: 100%;
+    font-family: 'nerisligt',sans-serif;
+    text-align: center;
+}
+
+.portfolio h2 {
+    color: #000;
+    margin-top: 2em;
+    font-family: 'nerislight' sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.portfolio {
+    width: 100%;
+}
+
+.portfolio-gallery-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 10px 35px;
+}
+
+.portfolio-gallery-ul li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 190px;
+    padding 0;
+    margin: 35px 0;
+
+}
+
+
+.portfolio-gallery-ul li:nth-child(1) {
+    background: url("../img/boy.gif") no-repeat;
+    background-size: 100% 100%;
+    padding: 0;
+}
+
+.portfolio-gallery-ul li:nth-child(2) {
+    background: url("../img/children.gif") no-repeat;
+    background-size: 100% 100%;
+    padding:  0;
+}
+
+.portfolio-gallery-ul li:nth-child(3) {
+    background: url("../img/girl.png") no-repeat;
+    background-size: 100% 100%;
+    padding:  0;
+}
+
+.portfolio-gallery-ul li a {
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'nerislight', sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+
+
+
+
+
 /* Contact us */
 
 .contact-us {
@@ -328,8 +407,8 @@ form {
 }
 
 label {
-  display: block;
-  margin-bottom: 5px;
+display: block;
+margin-bottom: 5px;
 font-family: 'Lato', sans-serif;
 font-size: 1em;
 	text-align: left;
@@ -583,6 +662,14 @@ h2 {
 			display: block;
 		}
 
+    /* Portfolio */
+
+    portfolio-gallery-ul li {
+        width: 47.39%;
+        height: 270px;
+        margin-right: 17px;
+    }
+
 
 }
 
@@ -651,8 +738,19 @@ h2 {
         margin-top: 80px;
     }
 
+      /* Portfolio */
 
-}
+    .portfolio-gallery-ul li {
+      width: 32.5%;
+      height: 310px;
+      margin-right: 5px;
+    }
+
+    .portfolio-gallery-ul {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
 
 /* No greater than 767px, no less than 400px */
 
@@ -699,6 +797,15 @@ h2 {
 		button {
 			font-size: 1em;
 		}
+
+
+    /* Portfolio */
+
+.portfolio-gallery-ul li {
+      height: 310px;
+    }
+
+
 
 
 }
