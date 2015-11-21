@@ -664,7 +664,7 @@ h2 {
 
     /* Portfolio */
 
-    portfolio-gallery-ul li {
+    .portfolio-gallery-ul li {
         width: 47.39%;
         height: 270px;
         margin-right: 17px;
