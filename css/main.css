@@ -63,17 +63,17 @@ html {
 
 .landingpage {
 
-    
+
 background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(125,185,232,0) 100%), url(../img/child.jpg); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%), url(../img/child.jpg); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%), url(../img/child.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
 
     width: 100%;
-    margin: 0; 
-    padding: 0; 
-    margin-top: 50px; 
-    background-size:cover;  
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    background-size:cover;
     background-position: 40% 50%;
     background-repeat: no-repeat;
 	}
@@ -91,7 +91,7 @@ header {
 
 
 
-.header-nav { 
+.header-nav {
     float: right;
     top: 0;
     }
@@ -107,7 +107,7 @@ header {
 
 
 
-.header-ul { 
+.header-ul {
     padding: 0;
     margin: 0;
     text-align: right;
@@ -120,8 +120,8 @@ header {
     text-decoration: none;
     list-style-type: none;
     font-family: 'nerissemibold';
-    font-weight: 900; 
-    color: #e8c52e; 
+    font-weight: 900;
+    color: #e8c52e;
 
    }
 
@@ -158,7 +158,7 @@ header {
     color: white;
     text-align: center;
     margin: 0;
-    padding: 30px 5% 20px; 
+    padding: 30px 5% 20px;
 
 }
 
@@ -167,9 +167,9 @@ header {
     font-family: "lato";
     color: white;
     text-align: center;
-    line-height: 20px; 
+    line-height: 20px;
     margin: 0;
-    padding: 0 7%; 
+    padding: 0 7%;
 }
 
 
@@ -186,9 +186,9 @@ p {
 /* Navigation Landingpage */
 
 
-   
+
 .landingpage-nav {
-    padding: 10% ;  
+    padding: 10% ;
 }
 
 
@@ -213,7 +213,7 @@ p {
     list-style-type: none;
     text-align: center;
     margin-bottom: 10px;
-    padding: 5px; 
+    padding: 5px;
     font-family: 'nerissemibold';
 }
 .landingpage-li:last-child {
@@ -227,14 +227,14 @@ p {
   	background-color: #fff;
   	padding: 0 0;
 width: 100%;
-    
+
 }
 
 .about-us h1,
 .about-us h2 {
   	color: #000;
-    text-align: center; 
-    font-family: 'nerislight'; 
+    text-align: center;
+    font-family: 'nerislight';
 }
 
 .about-us h1 {
@@ -333,7 +333,7 @@ width: 100%;
     height: 190px;
     padding 0;
     margin: 35px 0;
-    
+
 }
 
 
@@ -388,8 +388,8 @@ width: 100%;
 	background-color: #00998a;
 	font-weight: normal;
 	width: 100%;
-    font-family: 'nerislight', sans-serif; 
-    text-align: center; 
+    font-family: 'nerislight', sans-serif;
+    text-align: center;
 }
 
 .contact-us h2 {
@@ -443,7 +443,7 @@ textarea {
 
 .form-hint {
 	display: block;
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 	font-size: 0.8em;
 	text-align: left;
 	display: none;
@@ -545,24 +545,24 @@ footer  {
 
 @media screen and (min-width: 768px)  {
 
-    
+
 .landingpage-nav  {
-   padding: 5% 10% 10%; 
+   padding: 5% 10% 10%;
     }
-                
+
     .landingpage-li  {
-    margin: 30px; 
+    margin: 30px;
     }
-    
+
     .landingpage-li a {
-    
+
     border: 6px solid #e8c52e;
     padding: 10px 0;
 
 
 }
-    
-    
+
+
 h1 {
     font-size: 3.2em;
 }
@@ -577,26 +577,26 @@ h2 {
 
 }
 
- 
-    
+
+
 .landingpage-h1 {
-        font-size: 3.2em; 
-    padding: 50px 0 40px 0; 
+        font-size: 3.2em;
+    padding: 50px 0 40px 0;
 
 }
-    
-    
+
+
 
 .landingpage-h2 {
         font-size: 1.6em;
-        line-height: 30px; 
-        padding: 0 10%; 
+        line-height: 30px;
+        padding: 0 10%;
 }
-    
-    
 
-    
-.landingpage-li a  { 
+
+
+
+.landingpage-li a  {
 
         line-height: 30px;
         font-size: 1.7em;
@@ -661,14 +661,15 @@ h2 {
 		.contact-details ul {
 			display: block;
 		}
-    
+
     /* Portfolio */
-    
+
     portfolio-gallery-ul li {
         width: 47.39%;
         height: 270px;
         margin-right: 17px;
     }
+
 
 }
 
@@ -677,8 +678,8 @@ h2 {
 
 
 @media screen and (min-width: 992px)  {
-    
-    
+
+
 
 .landingpage-ul {
     display: flex;
@@ -695,48 +696,48 @@ h2 {
     -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
     -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
     -ms-flex: 1;           /* IE 10 */
-    margin: 50px; 
+    margin: 50px;
     }
-    
+
     .landingpage-li a {
-    
+
     border: 6px solid #e8c52e;
     padding: 12px 0;
-   
+
 }
 
 
 .landingpage-h1 {
-  
-    padding: 50px 5% 50px; 
+
+    padding: 50px 5% 50px;
 }
-    
+
 	.about-us li {
 			margin: 10px 20px 0;
 	}
-    
-    
 
-    
+
+
+
     .benefix-logo {
-    margin-left: 25px; 
-    margin-top: 20px; 
+    margin-left: 25px;
+    margin-top: 20px;
     width: 150px;
 }
-        
-.header-menu { 
-    width: 45px; 
-    margin-right: 25px; 
+
+.header-menu {
+    width: 45px;
+    margin-right: 25px;
     margin-top: 22px; }
-    
+
     header {
     height: 80px;
     }
-        
+
     .landingpage {
-        margin-top: 80px; 
+        margin-top: 80px;
     }
-    
+
       /* Portfolio */
 
     .portfolio-gallery-ul li {
@@ -748,9 +749,8 @@ h2 {
     .portfolio-gallery-ul {
       margin-left: 10px;
       margin-right: 10px;
-    } 
-    
-}
+    }
+
 
 /* No greater than 767px, no less than 400px */
 
@@ -797,15 +797,14 @@ h2 {
 		button {
 			font-size: 1em;
 		}
-        
-  
-    /* Portfolio */      
-        
+
+
+    /* Portfolio */
+
 .portfolio-gallery-ul li {
       height: 310px;
     }
-        
-        
+
 
 
 
