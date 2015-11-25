@@ -42,33 +42,37 @@
 
 
 
-
-
+/* Reset margin and padding */
 
 body {
   margin: 0;
-    padding: 0;
-
-
-    }
+  padding: 0;
+}
 
 html {
   margin: 0;
-    padding: 0;
+  padding: 0;
+}
+
+/* General styles */
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1em auto;
+	padding: 0 5%;
+	max-width: 720px;
+}
 
 
-    }
-
-
+/* Landing-page */
 
 .landingpage {
-
-
-background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(125,185,232,0) 100%), url(../img/child.jpg); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%), url(../img/child.jpg); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%), url(../img/child.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
-
+    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(125,185,232,0) 100%), url(../img/child.jpg); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%), url(../img/child.jpg); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%), url(../img/child.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -82,48 +86,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 /* header */
 
 header {
-    position: fixed; top: 0; left: 0; bottom:0; right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
     width: 100%;
     height: 50px;
     z-index: 1;
     background: rgba(0, 0, 0,1);
 }
 
-
-
 .header-nav {
     float: right;
     top: 0;
-    }
+}
 
 .header-menu {
     width: 30px;
     margin-right: 15px;
     margin-top: 15px;
-
-
-
 }
-
-
 
 .header-ul {
     padding: 0;
     margin: 0;
     text-align: right;
-
-
-    }
-
+}
 
 .header-li a {
     text-decoration: none;
     list-style-type: none;
-    font-family: 'nerissemibold';
+    font-family: 'nerissemibold', sans-serif;;
     font-weight: 900;
     color: #e8c52e;
-
-   }
+}
 
 .header-li  {
     list-style-type: none;
@@ -136,9 +133,8 @@ header {
     display: none;
 }
 
-.header-ul:hover .header-li{
+.header-ul:hover .header-li {
     display: block;
-
 }
 
 
@@ -146,7 +142,6 @@ header {
     width: 100px;
     margin-left: 15px;
     margin-top: 15px;
-
 }
 
 
@@ -154,7 +149,7 @@ header {
 
 .landingpage-h1 {
     font-size: 1.6em;
-    font-family: 'nerissemibold';
+    font-family: 'nerissemibold', sans-serif;
     color: white;
     text-align: center;
     margin: 0;
@@ -164,7 +159,7 @@ header {
 
 .landingpage-h2 {
     font-size: 0.8em;
-    font-family: "lato";
+    font-family: "lato", sans-serif;
     color: white;
     text-align: center;
     line-height: 20px;
@@ -173,18 +168,7 @@ header {
 }
 
 
-p {
-  font-family: 'Lato', sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  margin: 1em auto;
-	padding: 0 5%;
-	max-width: 720px;
-}
-
-
 /* Navigation Landingpage */
-
 
 
 .landingpage-nav {
@@ -200,7 +184,7 @@ p {
 .landingpage-li a {
     text-decoration: none;
     list-style-type: none;
-    font-family: 'nerisblack';
+    font-family: 'nerisblack', sans-serif;
     font-weight: 900;
     color: #e8c52e;
     padding: 0;
@@ -214,7 +198,7 @@ p {
     text-align: center;
     margin-bottom: 10px;
     padding: 5px;
-    font-family: 'nerissemibold';
+    font-family: 'nerissemibold', sans-serif;
 }
 .landingpage-li:last-child {
     margin-bottom: 0;
@@ -226,15 +210,14 @@ p {
 .about-us {
   	background-color: #fff;
   	padding: 0 0;
-width: 100%;
-
+    width: 100%;
 }
 
 .about-us h1,
 .about-us h2 {
   	color: #000;
     text-align: center;
-    font-family: 'nerislight';
+
 }
 
 .about-us h1 {
@@ -243,13 +226,13 @@ width: 100%;
     padding: 15px 0 15px;
     margin: 0;
     width: 100%;
-
+    font-family: 'nerislight', sans-serif;
 }
 
 .about-us h2 {
   	color: #000;
   	margin-top: 2em;
-		font-family: 'nerislight', sans-serif;
+		font-family: 'nerissemibold', sans-serif;
 		font-size: 1.2em;
 }
 
@@ -260,27 +243,24 @@ width: 100%;
 		padding: 0;
 }
 
-
-
 .about-us li {
 		display: inline-block;
   	border: none;
-  	padding: 35px 0 35px;
+  	padding: 35px 0 10px;
 		margin: 0 0.5% 0;
   	text-align: center;
-  	font-family: 'nerislight', sans-serif;
+  	font-family: 'nerissemibold', sans-serif;
   	font-weight: bold;
   	color: #e8c52e;
   	font-size: 0.95em;
-		width: 100px;
-		height: 101px;
+    width: 100px;
+    height: 101px;
 }
 
 .about-us li:nth-child(1) {
 	background: url("../img/icon_concept.png") no-repeat;
 	margin-left: 0;
-	background-size: 100%;
-
+  background-size: 100%;
 }
 
 .about-us li:nth-child(2) {
@@ -303,26 +283,27 @@ width: 100%;
     background-color: #d4145a;
     font-weight: normal;
     width: 100%;
-    font-family: 'nerisligt',sans-serif;
+    font-family: 'nerislight',sans-serif;
     text-align: center;
 }
 
 .portfolio h2 {
     color: #000;
     margin-top: 2em;
-    font-family: 'nerislight' sans-serif;
+    font-family: 'nerissemibold', sans-serif;
     font-size: 1.2em;
     text-align: center;
 }
 
 .portfolio {
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .portfolio-gallery-ul {
     list-style-type: none;
     padding: 0;
-    margin: 20px 10px 35px;
+    margin: 10px 10px 35px;
 }
 
 .portfolio-gallery-ul li {
@@ -331,27 +312,26 @@ width: 100%;
     text-align: center;
     width: 100%;
     height: 190px;
-    padding 0;
-    margin: 35px 0;
-
+    padding: 0;
+    margin: 20px 0;
 }
 
-
 .portfolio-gallery-ul li:nth-child(1) {
-    background: url("../img/boy.gif") no-repeat;
-    background-size: 100% 100%;
+    background: url("../img/boy2.jpg") no-repeat;
+    background-size: cover;
     padding: 0;
 }
 
 .portfolio-gallery-ul li:nth-child(2) {
     background: url("../img/children.gif") no-repeat;
-    background-size: 100% 100%;
+    background-position:center;
+    background-size: cover;
     padding:  0;
 }
 
 .portfolio-gallery-ul li:nth-child(3) {
-    background: url("../img/girl.png") no-repeat;
-    background-size: 100% 100%;
+    background: url("../img/girl3.jpg") no-repeat;
+    background-size: cover;
     padding:  0;
 }
 
@@ -370,10 +350,6 @@ width: 100%;
 }
 
 
-
-
-
-
 /* Contact us */
 
 .contact-us {
@@ -388,13 +364,13 @@ width: 100%;
 	background-color: #00998a;
 	font-weight: normal;
 	width: 100%;
-    font-family: 'nerislight', sans-serif;
-    text-align: center;
+  font-family: 'nerislight', sans-serif;
+  text-align: center;
 }
 
 .contact-us h2 {
 	color: #000;
-	font-family: 'nerislight', sans-serif;
+	font-family: 'nerissemibold', sans-serif;
 	font-size: 1.2em;
 	margin-top: 1em;
 }
@@ -511,14 +487,14 @@ button {
 
 
 
-    /* Footer */
+/* Footer */
 
 
 
 footer  {
     text-align: center;
     color: white;
-    font-family: "lato";
+    font-family: "lato", sans-serif;
     font-size: 0.8em;
     clear: both;
     background-color: rgba(0, 0, 0, 0.9);
@@ -545,80 +521,66 @@ footer  {
 
 @media screen and (min-width: 768px)  {
 
+    h1 {
+      font-size: 3.2em;
+    }
 
-.landingpage-nav  {
-   padding: 5% 10% 10%;
+    h2 {
+      font-size: 1.6em;
+    }
+
+    p {
+      width:80%;
+    }
+
+
+    /* Landing-page */
+
+    .landingpage-nav  {
+      padding: 5% 10% 10%;
     }
 
     .landingpage-li  {
-    margin: 30px;
+      margin: 30px;
     }
 
     .landingpage-li a {
-
-    border: 6px solid #e8c52e;
-    padding: 10px 0;
-
-
-}
-
-
-h1 {
-    font-size: 3.2em;
-}
-
-h2 {
-    font-size: 1.7em;
-    font-size: 3.2em;
-}
-
-h2 {
-    font-size: 1.6em;
-
-}
-
-
-
-.landingpage-h1 {
-        font-size: 3.2em;
-    padding: 50px 0 40px 0;
-
-}
-
-
-
-.landingpage-h2 {
-        font-size: 1.6em;
-        line-height: 30px;
-        padding: 0 10%;
-}
-
-
-
-
-.landingpage-li a  {
-
-        line-height: 30px;
-        font-size: 1.7em;
+      border: 6px solid #e8c52e;
+      padding: 10px 0;
     }
 
-		p {
-			width:80%;
-		}
+    .landingpage-h1 {
+      font-size: 3.2em;
+      padding: 50px 0 40px 0;
+    }
+
+    .landingpage-h2 {
+      font-size: 1.6em;
+      line-height: 30px;
+      padding: 0 10%;
+    }
+
+    .landingpage-li a {
+      line-height: 30px;
+      font-size: 1.7em;
+    }
+
+    /* About us */
 
 		.about-us li {
-		  	padding: 80px 0 80px;
-				margin: 10px 20px 0;
-		  	text-align: center;
-		  	font-size: 1.7em;
-				width: 200px;
-				height: 201px;
+		  padding: 80px 0 10px;
+			margin: 20px 20px 0;
+		  text-align: center;
+		  font-size: 1.7em;
+			width: 200px;
+			height: 201px;
 		}
 
-		.about-us h2 {
-		  	margin-top: 5em;
-				margin-bottom: 1em;
-		}
+    .about-us h2 {
+      margin-top: 50px;
+    }
+
+    /* Contact us */
 
 		.contact {
 			max-width: 840px;
@@ -630,6 +592,7 @@ h2 {
 			width: 50%;
 			float: left;
 			padding-left: 50px;
+      margin-bottom: 30px;
 		}
 
 		textarea {
@@ -643,6 +606,7 @@ h2 {
 		}
 
 		.contact-us h2 {
+      margin-top: 30px;
 			margin-bottom: 30px;
 		}
 
@@ -664,13 +628,27 @@ h2 {
 
     /* Portfolio */
 
+    .portfolio-gallery-ul {
+      margin-left:4%;
+    }
+
     .portfolio-gallery-ul li {
         width: 47.39%;
         height: 270px;
         margin-right: 17px;
     }
 
+    .portfolio-gallery-ul li:nth-child(2) {
+       margin-right: 0px;
+    }
 
+    .portfolio h2 {
+        margin-top: 50px;
+    }
+
+    .portfolio {
+        margin-bottom: 80px;
+    }
 }
 
 
@@ -679,108 +657,122 @@ h2 {
 
 @media screen and (min-width: 992px)  {
 
+    /* Landing-page */
 
-
-.landingpage-ul {
+  .landingpage-ul {
     display: flex;
     display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  }
 
+  .landingpage-li  {
+      flex: 1;               /* NEW, Spec - Firefox, Chrome, Opera */
+      -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+      -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
+      -ms-flex: 1;           /* IE 10 */
+      margin: 50px;
+  }
+
+  .landingpage-li a {
+      border: 6px solid #e8c52e;
+      padding: 12px 0;
+  }
+
+  .landingpage-h1 {
+      padding: 50px 5% 50px;
+  }
+
+  .benefix-logo {
+      margin-left: 25px;
+      margin-top: 20px;
+      width: 150px;
+  }
+
+  .header-menu {
+      width: 45px;
+      margin-right: 25px;
+      margin-top: 22px; }
+
+  header {
+      height: 80px;
+  }
+
+  .landingpage {
+      margin-top: 80px;
+  }
+
+
+  /* About us */
+
+  .about-us li {
+  		margin: 10px 10px 0;
+  	}
+
+
+  /* Portfolio */
+
+  .portfolio-gallery-ul {
+      margin: 10px 0 100px;
+  }
+
+  .portfolio-gallery-ul li {
+      width: 32.2%;
+      margin-right: 0.5%;
+  }
+
+  .portfolio-gallery-ul li:nth-child(1) {
+     margin-left: 1%;
+  }
+
+  .portfolio-gallery-ul li:nth-child(2) {
+     margin-right: 0.5%;
+  }
+
+  .portfolio-gallery-ul li:nth-child(3) {
+     margin-right: 0;
+  }
+
+  .portfolio-gallery-ul {
+      margin-left: 1%;
+      margin-right: 1%;
+  }
 
 }
-
-.landingpage-li  {
-    flex: 1;               /* NEW, Spec - Firefox, Chrome, Opera */
-    -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
-    -webkit-flex: 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
-    -ms-flex: 1;           /* IE 10 */
-    margin: 50px;
-    }
-
-    .landingpage-li a {
-
-    border: 6px solid #e8c52e;
-    padding: 12px 0;
-
-}
-
-
-.landingpage-h1 {
-
-    padding: 50px 5% 50px;
-}
-
-	.about-us li {
-			margin: 10px 20px 0;
-	}
-
-
-
-
-    .benefix-logo {
-    margin-left: 25px;
-    margin-top: 20px;
-    width: 150px;
-}
-
-.header-menu {
-    width: 45px;
-    margin-right: 25px;
-    margin-top: 22px; }
-
-    header {
-    height: 80px;
-    }
-
-    .landingpage {
-        margin-top: 80px;
-    }
-
-      /* Portfolio */
-
-    .portfolio-gallery-ul li {
-      width: 32.5%;
-      height: 310px;
-      margin-right: 5px;
-    }
-
-    .portfolio-gallery-ul {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
 
 /* No greater than 767px, no less than 400px */
 
-    @media (max-width:767px) and (min-width:400px) {
+@media (max-width:767px) and (min-width:400px) {
 
 
-h1 {
-        font-size:2.2em;
+    h1 {
+      font-size:2.2em;
     }
 
-h2 {
-        font-size:1.2em;
-    }
-
-.landingpage-h1 {
-        font-size:2.2em;
-         }
-
-.landingpage-h2 {
-
-        font-size:1.2em;
-        line-height: 25px;
+    h2 {
+      font-size:1.2em;
     }
 
 
+    /* Landing-page */
 
-	.social-contact {
-		height: 1.1em;
-		padding-right: 1.1em;
-	}
+    .landingpage-h1 {
+      font-size:2.2em;
+    }
+
+    .landingpage-h2 {
+      font-size:1.2em;
+      line-height: 25px;
+    }
+
+
+    /* Contact us */
+
+	  .social-contact {
+		  height: 1.1em;
+		  padding-right: 1.1em;
+	   }
 
 		.contact-details {
 			padding-left: 10px;
@@ -801,11 +793,15 @@ h2 {
 
     /* Portfolio */
 
-.portfolio-gallery-ul li {
+  .portfolio-gallery-ul li {
       height: 310px;
     }
+}
 
+@media screen and (min-width: 1920px) {
 
-
+  .portfolio-gallery-ul li {
+      height: 400px;
+    }
 
 }
