@@ -11,31 +11,33 @@
   <body>
 
     <header>
-        <a href="index.html"><img src="img/benefix_logo_transparent_white.png" alt="Benefix logo" class="benefix-logo"></a>
+        <a href="index.html"><img src="img/benefix_logo_2.svg" alt="Benefix logo" class="benefix-logo"></a>
          <nav class="header-nav">
+
             <ul class="header-ul">
-                <a href="index.html"><img src="img/menu.png" alt="Menu" class="header-menu"></a>
-                <li class="header-li"><a href="index.html">Portfolio</a></li>
-                <li class="header-li"><a href="about.html">About us</a></li>
-                <li class="header-li"><a href="contact.html" class="selected">Contact us</a></li>
+                <li><a href="index.html"><img src="img/menu.png" alt="Menu" class="header-menu"></a></li>
+                <li class="header-li"><a href="#about-us">About us</a></li>
+                <li class="header-li"><a href="#portfolio">Portfolio</a></li>
+                <li class="header-li"><a href="#contact-us" class="selected">Contact us</a></li>
             </ul>
 
         </nav>
     </header>
+
         <section class="landingpage">
             <h1 class="landingpage-h1">Web design for benefit</h1>
             <h2 class="landingpage-h2">We help socially responsible companies and organizations to become visible on the web.</h2>
         <nav class="landingpage-nav">
             <ul class="landingpage-ul">
-                <li class="landingpage-li"><a href="index.html">Portfolio</a></li>
-                <li class="landingpage-li"><a href="about.html">About us</a></li>
-                <li class="landingpage-li"><a href="contact.html" class="selected">Contact us</a></li>
+                <li class="landingpage-li"><a href="#portfolio">Portfolio</a></li>
+                <li class="landingpage-li"><a href="#about-us">About us</a></li>
+                <li class="landingpage-li"><a href="#contact-us" class="selected">Contact us</a></li>
             </ul>
         </nav>
     </section>
 
 
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <h1>About us</h1>
       <h2>Our purpose and vision</h2>
       <p>The main focus of Benefix is to help socially responsible companies and organisations to be visible on the web, so that they are able to perform their important work. </p>
@@ -49,22 +51,22 @@
         <li>Development</li>
       </ul>
     </section>
-      
-      <section class="portfolio">
+
+      <section class="portfolio" id="portfolio">
           <h1>Portfolio</h1>
           <h2>Our recent projects</h2>
           <ul class="portfolio-gallery-ul">
-              <li><a href="">Project 1</a></li>
-              <li><a href="">Project 2</a></li>
-              <li><a href="">Project 3</a></li>
+              <li><a href="">Happy Child</a></li>
+              <li><a href="">Family</a></li>
+              <li><a href="">Human and Nature</a></li>
           </ul>
-          
+
       </section>
 
-    <section class="contact-us">
+    <section class="contact-us" id="contact-us">
       <h1>Contact us</h1>
         <div class="contact">
-          <form class="contact-form" action="" method="get">
+          <form class="contact-form" action="index.html" method="get">
             <h2>Send us a message</h2>
             <ul>
               <li>
@@ -72,7 +74,7 @@
                 <input type="text" id="name" name="user_name" value="">
               </li>
               <li>
-                <label for="email">Email</label>
+                <label for="mail">Email</label>
                 <input type="email" id="mail" name="user_email">
                 <span class="form-hint">name@example.com</span>
               </li>
@@ -80,7 +82,9 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="user_message"></textarea>
               </li>
-                <button type="submit" name="button">Send</button>
+                <li>
+                  <button type="submit" name="button">Send</button>
+                </li>
             </ul>
           </form>
           <div class="contact-details">
