@@ -207,14 +207,9 @@ header {
 
 
 .landingpage-li a:hover {
-    text-decoration: none;
-    list-style-type: none;
-    font-family: 'nerisblack', sans-serif;
-    font-weight: 900;
     background-color: #e8c52e;
     color: black; 
-    border: 3px solid #e8c52e;
-    display: block;
+
 }
 
 .landingpage-li  {
