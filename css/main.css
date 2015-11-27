@@ -120,18 +120,31 @@ header {
     font-family: 'nerissemibold', sans-serif;;
     font-weight: 900;
     color: #e8c52e;
+    display: block;
+    padding: 10px;  
+}
+
+
+.header-li a:hover {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'nerissemibold', sans-serif;;
+    font-weight: 900;
+    color: black;
+    background-color: #e8c52e;
+    display: block; 
+    padding: 10px;  
 }
 
 .header-li  {
     list-style-type: none;
     text-align: left;
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+
     }
 
-.header-li {
-    display: none;
-}
+
 
 .header-ul:hover .header-li {
     display: block;
@@ -187,9 +200,20 @@ header {
     font-family: 'nerisblack', sans-serif;
     font-weight: 900;
     color: #e8c52e;
-    padding: 0;
     border: 3px solid #e8c52e;
     padding: 5px 0;
+    display: block;
+}
+
+
+.landingpage-li a:hover {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'nerisblack', sans-serif;
+    font-weight: 900;
+    background-color: #e8c52e;
+    color: black; 
+    border: 3px solid #e8c52e;
     display: block;
 }
 
